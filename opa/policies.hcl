@@ -4,7 +4,7 @@ policy "friday_deploys" {
 }
 
 policy "public_ingress" {
-  query = "data.terraform.policies.public_ingress.deny"
+  query = "data.terraform.policies.public_ingress.allow"
   enforcement_level = "mandatory"
 }
 
