@@ -8,3 +8,9 @@ policy "public_ingress" {
   enforcement_level = "mandatory"
 }
 
+policy "private_ingress" {
+  query = "data.terraform.policies.private_ingress.deny"
+  enforcement_level = "mandatory"
+}
+
+
