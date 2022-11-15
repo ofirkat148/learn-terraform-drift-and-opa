@@ -1,7 +1,7 @@
 package terraform.policies.public_ingress
 
 import input.plan as tfplan
-sprintf("%v has 0.0.0.0/0 as allowed ingress", [r.address])
+
 deny[msg] {
   r := tfplan.resource_changes[_]
   r.type == "aws_security_group"
