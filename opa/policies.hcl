@@ -4,12 +4,12 @@ policy "friday_deploys" {
 }
 
 policy "public_ingress" {
-  query = "data.terraform.policies.public_ingress.allow"
+  query = "data.terraform.policies.public_ingress.deny"
   enforcement_level = "mandatory"
 }
 
 policy "private_ingress" {
-  query = "data.terraform.policies.private_ingress.deny"
+  query = "data.terraform.policies.private_ingress.allow"
   enforcement_level = "mandatory"
 }
 
