@@ -9,7 +9,7 @@ policy "public_ingress" {
 }
 
 policy "private_ingress" {
-  query = "data.terraform.policies.private_ingress.deny"
+  query = "data.terraform.policies.private_ingress.allow"
   enforcement_level = "mandatory"
 }
 
